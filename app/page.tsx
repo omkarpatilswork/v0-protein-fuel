@@ -13,27 +13,31 @@ export default function HomePage() {
 
       {/* Hero Section with Video Background */}
       <section className="relative h-screen">
-        <VideoHero
-          videoSrc="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Food_Truck_Brand_Film_Generation-CiZ0wG1T4myglgi6VeG1PH70jDy7eu.mp4"
-          posterSrc="/assets/images/hero_frame_fallback.jpg"
-          title="Gains on Wheels"
-          subtitle="Healthy, tasty, protein-packed meals wherever you work"
-        />
+        <VideoHero videoSrc="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Food_Truck_Brand_Film_Generation-CiZ0wG1T4myglgi6VeG1PH70jDy7eu.mp4" posterSrc="/assets/images/hero_frame_fallback.jpg" />
 
-        <div className="absolute bottom-12 left-0 right-0 flex justify-center gap-4 px-4">
-          <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8">
-            Order Now
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 text-lg px-8"
-          >
-            <Link href="/locations" className="flex items-center gap-2">
-              <MapPin size={20} />
-              Find Today's Location
-            </Link>
-          </Button>
+        <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center pb-12 px-4">
+          <div className="text-center mb-8">
+            <h1 className="text-6xl text-white mb-4 tracking-tight font-bold overline md:text-5xl">Gains on Wheels</h1>
+            <p className="text-2xl text-white/95 font-medium tracking-wide md:text-2xl italic">
+              Healthy, tasty, protein-packed meals wherever you work
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
+              Order Now
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 text-lg px-8 py-6"
+            >
+              <Link href="/locations" className="flex items-center gap-2">
+                <MapPin size={20} />
+                Find Today's Location
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
