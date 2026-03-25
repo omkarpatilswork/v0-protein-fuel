@@ -47,98 +47,101 @@ export default function HomePage() {
       </section>
 
       {/* Quick Stats */}
-      <section className="py-8 sm:py-12 bg-primary text-primary-foreground">
+      <section className="py-12 sm:py-16 bg-gradient-to-r from-primary to-primary/90">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
-            <div>
-              <div className="text-3xl sm:text-4xl font-bold text-accent mb-1 sm:mb-2">35g+</div>
-              <div className="text-xs sm:text-sm text-primary-foreground/70">Protein Per Meal</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
+            <div className="py-4">
+              <div className="text-4xl sm:text-5xl font-black text-accent mb-2 sm:mb-3">35g+</div>
+              <div className="text-sm sm:text-base text-primary-foreground/80 font-medium">Protein Per Meal</div>
             </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-bold text-accent mb-1 sm:mb-2">{"<"}15min</div>
-              <div className="text-xs sm:text-sm text-primary-foreground/70">Quick Service</div>
+            <div className="py-4">
+              <div className="text-4xl sm:text-5xl font-black text-accent mb-2 sm:mb-3">{"<"}15min</div>
+              <div className="text-sm sm:text-base text-primary-foreground/80 font-medium">Quick Service</div>
             </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-bold text-accent mb-1 sm:mb-2">100%</div>
-              <div className="text-xs sm:text-sm text-primary-foreground/70">Fresh Ingredients</div>
+            <div className="py-4">
+              <div className="text-4xl sm:text-5xl font-black text-accent mb-2 sm:mb-3">100%</div>
+              <div className="text-sm sm:text-base text-primary-foreground/80 font-medium">Fresh Ingredients</div>
             </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-bold text-accent mb-1 sm:mb-2">3</div>
-              <div className="text-xs sm:text-sm text-primary-foreground/70">Pune Locations</div>
+            <div className="py-4">
+              <div className="text-4xl sm:text-5xl font-black text-accent mb-2 sm:mb-3">3</div>
+              <div className="text-sm sm:text-base text-primary-foreground/80 font-medium">Pune Locations</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Product Showcase */}
-      <section className="py-12 sm:py-16 md:py-20 bg-background">
+      <section className="py-16 sm:py-20 md:py-28 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-balance">
-              Quick. Healthy. Protein-packed.
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-balance leading-tight">
+              Quick. Healthy. Delicious.
             </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-balance px-4">
-              Every meal designed to fuel your workday without compromise
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto text-balance px-4 leading-relaxed">
+              Every meal crafted to fuel your workday with premium ingredients and uncompromising taste
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            <Card className="overflow-hidden group hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300 border-0">
+              <div className="aspect-square bg-muted relative overflow-hidden">
                 <img
                   src="/protein-wrap-with-grilled-chicken-and-fresh-vegeta.jpg"
                   alt="Protein Wraps"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-2">Power Wraps</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Grilled chicken, paneer, or tofu with fresh veggies in whole wheat wraps
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-2">Power Wraps</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Grilled chicken, paneer, or tofu with crisp fresh veggies in whole wheat wraps
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between pt-4 border-t">
                   <span className="text-sm font-semibold text-accent">35-40g protein</span>
-                  <span className="text-lg font-bold">₹180-220</span>
+                  <span className="text-xl font-bold text-foreground">₹180-220</span>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden group hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300 border-0">
+              <div className="aspect-square bg-muted relative overflow-hidden">
                 <img
                   src="/protein-shake-with-berries-and-banana.jpg"
                   alt="Protein Shakes"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-2">Fuel Shakes</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Whey or plant-based protein blended with fresh fruits and superfoods
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-2">Fuel Shakes</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Whey or plant-based protein blended with fresh fruits and nutrient-dense superfoods
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between pt-4 border-t">
                   <span className="text-sm font-semibold text-accent">30g protein</span>
-                  <span className="text-lg font-bold">₹150-180</span>
+                  <span className="text-xl font-bold text-foreground">₹150-180</span>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden group hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+            <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300 border-0">
+              <div className="aspect-square bg-muted relative overflow-hidden">
                 <img
                   src="/protein-waffles-with-berries-and-syrup.jpg"
                   alt="Protein Waffles"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-2">Protein Waffles</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Fluffy protein-packed waffles with Greek yogurt and fresh berries
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-2">Protein Waffles</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Fluffy protein-packed waffles topped with Greek yogurt and fresh berries
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between pt-4 border-t">
                   <span className="text-sm font-semibold text-accent">25g protein</span>
-                  <span className="text-lg font-bold">₹140-170</span>
+                  <span className="text-xl font-bold text-foreground">₹140-170</span>
                 </div>
               </CardContent>
             </Card>
