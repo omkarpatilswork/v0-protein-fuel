@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>Protein Fuel, Gains on Wheels: a food-truck concept for Pune's IT parks</title>
+  <defs>
+    <clipPath id="card"><rect width="1280" height="440" rx="28"/></clipPath>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f07a2a"/>
+      <stop offset="1" stop-color="#d9480f"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="440" fill="#15161f"/>
+    <circle cx="1160" cy="40" r="220" fill="#ea6a1c" opacity="0.10"/>
+    <path d="M0 392 H1280" stroke="#2a2b36" stroke-width="2"/>
+    <path d="M640 404 H700 M760 404 H820 M880 404 H940 M1000 404 H1060 M1120 404 H1180" stroke="#2a2b36" stroke-width="4" stroke-linecap="round"/>
+
+    <text x="64" y="92" fill="#ea6a1c" font-size="17" font-weight="700" letter-spacing="5">PUNE · IT PARKS · LUNCH</text>
+    <text x="64" y="172" fill="#ffffff" font-size="72" font-weight="800" letter-spacing="-1">Protein Fuel</text>
+    <text x="66" y="224" fill="#ea6a1c" font-size="34" font-weight="700">Gains on Wheels</text>
+    <text fill="#ffffff" fill-opacity="0.72" font-size="21"><tspan x="66" y="272">A food-truck concept: high-protein wraps, shakes and</tspan><tspan x="66" y="300">waffles, with the macros printed on every item.</tspan></text>
+
+    <g font-size="16" font-weight="700">
+      <rect x="64" y="332" width="168" height="40" rx="20" fill="#ea6a1c"/>
+      <text x="148" y="358" text-anchor="middle" fill="#ffffff">25–40g protein</text>
+      <rect x="244" y="332" width="168" height="40" rx="20" fill="#ffffff" fill-opacity="0.1"/>
+      <text x="328" y="358" text-anchor="middle" fill="#ffffff">₹140–220 an item</text>
+      <rect x="424" y="332" width="188" height="40" rx="20" fill="#ffffff" fill-opacity="0.1"/>
+      <text x="518" y="358" text-anchor="middle" fill="#ffffff">3 IT parks a week</text>
+    </g>
+
+    <!-- the truck -->
+    <g transform="translate(700 140)">
+      <ellipse cx="250" cy="252" rx="270" ry="14" fill="#000" opacity="0.4"/>
+      <rect x="0" y="20" width="400" height="200" rx="22" fill="url(#body)"/>
+      <path d="M400 70 H468 Q500 70 512 110 L530 170 Q534 186 534 200 V220 H400 Z" fill="#e2581a"/>
+      <path d="M414 86 H462 Q480 86 488 110 L500 150 H414 Z" fill="#1d1e29"/>
+      <path d="M420 92 L440 92 L428 144 L418 144 Z" fill="#ffffff" opacity="0.15"/>
+      <rect x="0" y="196" width="534" height="24" rx="8" fill="#b83c0c"/>
+      <!-- service window -->
+      <rect x="40" y="62" width="250" height="96" rx="10" fill="#1d1e29"/>
+      <rect x="40" y="148" width="250" height="14" rx="4" fill="#c9c9d1"/>
+      <g>
+        <path d="M30 40 H300 L292 62 H38 Z" fill="#ffffff"/>
+        <path d="M30 40 H64 L62 62 H38 Z M98 40 H132 L131 62 H96 Z M166 40 H200 L200 62 H166 Z M234 40 H268 L270 62 H236 Z" fill="#ea6a1c"/>
+        <path d="M38 62 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 16 0 q8 10 14 0" fill="#ffffff"/>
+      </g>
+      <!-- menu board -->
+      <rect x="304" y="64" width="80" height="94" rx="8" fill="#1d1e29"/>
+      <rect x="314" y="76" width="44" height="6" rx="3" fill="#ea6a1c"/>
+      <rect x="314" y="92" width="60" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+      <rect x="314" y="104" width="52" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+      <rect x="314" y="116" width="58" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+      <rect x="314" y="128" width="40" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+      <!-- logo on body -->
+      <circle cx="78" cy="186" r="0" fill="none"/>
+      <text x="165" y="190" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="900" letter-spacing="3">PROTEIN FUEL</text>
+      <!-- food on the counter -->
+      <rect x="70" y="128" width="26" height="20" rx="4" fill="#f5d6a0"/>
+      <circle cx="140" cy="138" r="11" fill="#7cbf4e"/>
+      <rect x="196" y="116" width="18" height="32" rx="5" fill="#b9467a"/>
+      <rect x="226" y="122" width="18" height="26" rx="5" fill="#6b3b22"/>
+      <!-- wheels -->
+      <g>
+        <circle cx="104" cy="228" r="40" fill="#1d1e29"/>
+        <circle cx="104" cy="228" r="18" fill="#9a9aa6"/>
+        <circle cx="430" cy="228" r="40" fill="#1d1e29"/>
+        <circle cx="430" cy="228" r="18" fill="#9a9aa6"/>
+      </g>
+      <rect x="520" y="182" width="16" height="12" rx="4" fill="#ffd36b"/>
+    </g>
+  </g>
+</svg>

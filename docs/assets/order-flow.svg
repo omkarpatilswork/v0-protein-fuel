@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 230" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>How a pre-order works: build the order at your desk, pick a pickup slot at today's stop, get a pickup code, collect at the window</title>
+  <rect width="1280" height="230" rx="24" fill="#15161f"/>
+  <!-- cards: x = 28 + i * 304, width 296 -->
+  <g>
+    <rect x="28" y="28" width="296" height="174" rx="18" fill="#22232e"/>
+    <text x="56" y="70" fill="#ea6a1c" font-size="15" font-weight="800" letter-spacing="3">1 · AT YOUR DESK</text>
+    <text x="56" y="108" fill="#ffffff" font-size="24" font-weight="800">Build the order</text>
+    <text fill="#ffffff" fill-opacity="0.7" font-size="15"><tspan x="56" y="140">Add wraps, shakes, waffles.</tspan><tspan x="56" y="162">Protein, calories and price</tspan><tspan x="56" y="184">add up as you go.</tspan></text>
+  </g>
+  <g>
+    <rect x="332" y="28" width="296" height="174" rx="18" fill="#22232e"/>
+    <text x="360" y="70" fill="#ea6a1c" font-size="15" font-weight="800" letter-spacing="3">2 · PICK A SLOT</text>
+    <text x="360" y="108" fill="#ffffff" font-size="24" font-weight="800">Today's stop</text>
+    <text fill="#ffffff" fill-opacity="0.7" font-size="15"><tspan x="360" y="140">The site knows where the</tspan><tspan x="360" y="162">truck is today (Pune time)</tspan><tspan x="360" y="184">and offers 15-minute slots.</tspan></text>
+  </g>
+  <g>
+    <rect x="636" y="28" width="296" height="174" rx="18" fill="#22232e"/>
+    <text x="664" y="70" fill="#ea6a1c" font-size="15" font-weight="800" letter-spacing="3">3 · GET A CODE</text>
+    <text x="664" y="108" fill="#ffffff" font-size="24" font-weight="800">Pickup code</text>
+    <text fill="#ffffff" fill-opacity="0.7" font-size="15"><tspan x="664" y="140">A short code for the window.</tspan><tspan x="664" y="162">In this demo nothing is sent</tspan><tspan x="664" y="184">and nothing is charged.</tspan></text>
+  </g>
+  <g>
+    <rect x="940" y="28" width="312" height="174" rx="18" fill="#ea6a1c"/>
+    <text x="968" y="70" fill="#ffffff" fill-opacity="0.85" font-size="15" font-weight="800" letter-spacing="3">4 · AT THE TRUCK</text>
+    <text x="968" y="108" fill="#ffffff" font-size="24" font-weight="800">Skip the queue</text>
+    <text fill="#ffffff" fill-opacity="0.9" font-size="15"><tspan x="968" y="140">Show the code, take the bag,</tspan><tspan x="968" y="162">back at your desk well inside</tspan><tspan x="968" y="184">the lunch break.</tspan></text>
+  </g>
+</svg>

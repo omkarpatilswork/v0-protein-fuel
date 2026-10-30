@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 220" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>The weekly route: Monday Kharadi, Tuesday Viman Nagar, Wednesday Kalyani Nagar, Thursday Kharadi, Friday Viman Nagar, Saturday Kalyani Nagar, Sunday off. Lunch 12 to 3 PM.</title>
+  <rect width="1280" height="220" rx="24" fill="#f6f3ef"/>
+  <!-- columns: x = 28 + i * 176, width 160 -->
+  <g font-weight="700">
+    <g>
+      <rect x="28" y="28" width="160" height="164" rx="18" fill="#ea6a1c"/>
+      <text x="108" y="66" text-anchor="middle" fill="#ffffff" fill-opacity="0.8" font-size="16" letter-spacing="2">MON</text>
+      <text x="108" y="116" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="800">Kharadi</text>
+      <text x="108" y="144" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">EON IT Park</text>
+      <text x="108" y="172" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">12 – 3 PM</text>
+    </g>
+    <g>
+      <rect x="204" y="28" width="160" height="164" rx="18" fill="#2a9d8f"/>
+      <text x="284" y="66" text-anchor="middle" fill="#ffffff" fill-opacity="0.8" font-size="16" letter-spacing="2">TUE</text>
+      <text x="284" y="116" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="800">Viman Nagar</text>
+      <text x="284" y="144" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">Weikfield IT Citi</text>
+      <text x="284" y="172" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">12 – 3 PM</text>
+    </g>
+    <g>
+      <rect x="380" y="28" width="160" height="164" rx="18" fill="#6d5bd0"/>
+      <text x="460" y="66" text-anchor="middle" fill="#ffffff" fill-opacity="0.8" font-size="16" letter-spacing="2">WED</text>
+      <text x="460" y="116" text-anchor="middle" fill="#ffffff" font-size="21" font-weight="800">Kalyani Nagar</text>
+      <text x="460" y="144" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">Cerebrum IT Park</text>
+      <text x="460" y="172" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">12 – 3 PM</text>
+    </g>
+    <g>
+      <rect x="556" y="28" width="160" height="164" rx="18" fill="#ea6a1c"/>
+      <text x="636" y="66" text-anchor="middle" fill="#ffffff" fill-opacity="0.8" font-size="16" letter-spacing="2">THU</text>
+      <text x="636" y="116" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="800">Kharadi</text>
+      <text x="636" y="144" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">EON IT Park</text>
+      <text x="636" y="172" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">12 – 3 PM</text>
+    </g>
+    <g>
+      <rect x="732" y="28" width="160" height="164" rx="18" fill="#2a9d8f"/>
+      <text x="812" y="66" text-anchor="middle" fill="#ffffff" fill-opacity="0.8" font-size="16" letter-spacing="2">FRI</text>
+      <text x="812" y="116" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="800">Viman Nagar</text>
+      <text x="812" y="144" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">Weikfield IT Citi</text>
+      <text x="812" y="172" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">12 – 3 PM</text>
+    </g>
+    <g>
+      <rect x="908" y="28" width="160" height="164" rx="18" fill="#6d5bd0"/>
+      <text x="988" y="66" text-anchor="middle" fill="#ffffff" fill-opacity="0.8" font-size="16" letter-spacing="2">SAT</text>
+      <text x="988" y="116" text-anchor="middle" fill="#ffffff" font-size="21" font-weight="800">Kalyani Nagar</text>
+      <text x="988" y="144" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">Cerebrum IT Park</text>
+      <text x="988" y="172" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="14" font-weight="500">12 – 3 PM</text>
+    </g>
+    <g>
+      <rect x="1084" y="28" width="168" height="164" rx="18" fill="#ffffff" stroke="#e2dcd4" stroke-dasharray="6 6"/>
+      <text x="1168" y="66" text-anchor="middle" fill="#8a8580" font-size="16" letter-spacing="2">SUN</text>
+      <text x="1168" y="116" text-anchor="middle" fill="#8a8580" font-size="24" font-weight="800">Day off</text>
+      <text x="1168" y="144" text-anchor="middle" fill="#8a8580" font-size="14" font-weight="500">Truck rests</text>
+    </g>
+  </g>
+</svg>

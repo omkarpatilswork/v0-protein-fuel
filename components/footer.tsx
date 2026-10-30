@@ -1,98 +1,77 @@
 import Link from "next/link"
-import { Instagram, Twitter, Facebook, MapPin } from "lucide-react"
+import { MapPin } from "lucide-react"
+import { stops, daysAt } from "@/lib/schedule"
 
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-xl">PF</span>
+            <div className="mb-4 flex items-center gap-2">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent">
+                <span className="font-display text-lg font-bold text-accent-foreground">PF</span>
               </div>
-              <span className="font-bold text-xl">Protein Fuel</span>
+              <span className="font-display text-xl font-bold">Protein Fuel</span>
             </div>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Gains on Wheels. Healthy, protein-packed meals for busy professionals.
+            <p className="text-sm leading-relaxed text-primary-foreground/70">
+              Gains on Wheels. A food-truck concept for high-protein lunches that taste like a treat.
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="mb-4 font-semibold">Explore</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/menu"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Menu
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/locations"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Find Us Today
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Our Story
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/press"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Press & Media
-                </Link>
-              </li>
+              {[
+                { href: "/menu", label: "Menu & macros" },
+                { href: "/locations", label: "Find us today" },
+                { href: "/about", label: "The idea" },
+                { href: "/press", label: "Brand films" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-primary-foreground/70 transition-colors hover:text-primary-foreground">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Locations</h3>
+            <h3 className="mb-4 font-semibold">Weekly route</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li className="flex items-start gap-2">
-                <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-                <span>Kharadi, Pune</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-                <span>Viman Nagar, Pune</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-                <span>Kalyani Nagar, Pune</span>
-              </li>
+              {Object.values(stops).map((stop) => (
+                <li key={stop.id} className="flex items-start gap-2">
+                  <MapPin size={16} className="mt-0.5 flex-shrink-0" />
+                  <span>
+                    {stop.area} · {daysAt(stop.id).join(" & ")}
+                  </span>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Follow the Truck</h3>
-            <div className="flex gap-4 mb-4">
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-                <Instagram size={20} />
+            <h3 className="mb-4 font-semibold">Behind the truck</h3>
+            <p className="text-sm leading-relaxed text-primary-foreground/70">
+              A concept by{" "}
+              <a href="https://www.omkarpatil.in" className="font-semibold text-primary-foreground underline-offset-4 hover:underline">
+                Omkar Patil
               </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
-                <Facebook size={20} />
-              </a>
-            </div>
-            <p className="text-sm text-primary-foreground/70">#GainsOnWheels</p>
+              . Not open yet: no orders are taken and nothing is charged.
+            </p>
+            <a
+              href="https://github.com/omkarpatilswork/v0-protein-fuel"
+              className="mt-3 inline-block text-sm font-semibold text-accent underline-offset-4 hover:underline"
+            >
+              How it&apos;s built →
+            </a>
+            <p className="mt-3 text-sm text-primary-foreground/70">#GainsOnWheels</p>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-8 pt-8 text-center text-sm text-primary-foreground/70">
-          <p>&copy; {new Date().getFullYear()} Protein Fuel. All rights reserved.</p>
+        <div className="mt-8 border-t border-primary-foreground/10 pt-8 text-center text-sm text-primary-foreground/70">
+          <p>&copy; {new Date().getFullYear()} Protein Fuel · a concept brand</p>
         </div>
       </div>
     </footer>
